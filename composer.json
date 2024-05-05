@@ -1,0 +1,51 @@
+{
+    "name": "jason6809/laravel-openssl",
+    "description": "A Laravel package to generate OpenSSL with SAN painlessly.",
+    "version": "0.0.1",
+    "keywords": [
+        "jason6809",
+        "laravel-openssl"
+    ],
+    "homepage": "https://github.com/jason6809/laravel-openssl",
+    "license": "MIT",
+    "type": "library",
+    "authors": [
+        {
+            "name": "Jason Tam",
+            "email": "jason6809@gmail.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.4|^8.0",
+        "illuminate/support": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.43",
+        "phpunit/phpunit": "^9.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Jason6809\\LaravelOpenssl\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Jason6809\\LaravelOpenssl\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Jason6809\\LaravelOpenssl\\LaravelOpensslServiceProvider"
+            ]
+        }
+    }
+}
