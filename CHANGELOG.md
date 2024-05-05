@@ -2,6 +2,6 @@
 
 All notable changes to `laravel-openssl` will be documented in this file
 
-## 1.0.0 - 201X-XX-XX
+## 1.0.0 - 2024-05-06
 
-- initial release
+- First release.
