@@ -1,7 +1,6 @@
 {
     "name": "jason6809/laravel-openssl",
     "description": "A Laravel package to generate OpenSSL with SAN painlessly.",
-    "version": "0.0.1",
     "keywords": [
         "jason6809",
         "laravel-openssl"
