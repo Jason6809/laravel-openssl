@@ -1,10 +1,10 @@
-# Very short description of the package
+# Laravel OpenSSL
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/jason6809/laravel-openssl.svg?style=flat-square)](https://packagist.org/packages/jason6809/laravel-openssl)
 [![Total Downloads](https://img.shields.io/packagist/dt/jason6809/laravel-openssl.svg?style=flat-square)](https://packagist.org/packages/jason6809/laravel-openssl)
 ![GitHub Actions](https://github.com/jason6809/laravel-openssl/actions/workflows/main.yml/badge.svg)
 
-This is where your description should go. Try and limit it to a paragraph or two, and maybe throw in a mention of what PSRs you support to avoid any confusion with users and contributors.
+A Laravel package to generate OpenSSL with Subject Alternative Names (SAN) painlessly.
 
 ## Installation
 
@@ -17,13 +17,16 @@ composer require jason6809/laravel-openssl
 ## Usage
 
 ```php
-// Usage description here
+php artisan openssl:generate
 ```
+Follow the instruction by providing **Common Name** and **Subject Alternative Names (SAN)** you want.
+
+Boom! There is it! You will see your `<common_name>.crt` and `<common_name>.key` files at the Laravel project root. 
 
 ### Testing
 
 ```bash
-composer test
+./vendor/bin/phpunit
 ```
 
 ### Changelog
